@@ -1,0 +1,27 @@
+INICIO
+
+    LEER ingresos
+    LEER vivienda
+    LEER alimentos
+    LEER transporte
+    LEER servicios
+    LEER otrosGastos
+
+    totalGastos ← vivienda + alimentos + transporte + servicios + otrosGastos
+
+    MOSTRAR totalGastos
+
+    saldo ← ingresos - totalGastos
+
+    MOSTRAR saldo
+
+    SI saldo > 0
+        MOSTRAR "Tenés dinero disponible"
+
+    SI saldo = 0
+        MOSTRAR "Tus ingresos y gastos están equilibrados"
+
+    SI saldo < 0
+        MOSTRAR "Tus gastos superan tus ingresos"
+
+FIN

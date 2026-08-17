@@ -8,3 +8,9 @@ gastos_totales = vivienda + alimentos + transporte + servicios + otros_gastos
 saldo = ingresos - gastos_totales
 print("Gastos totales:" , gastos_totales)
 print("Saldo:" , saldo)
+if saldo < 0:
+   print("Tus gastos superan tus ingresos")
+elif saldo == 0:
+   print("Tus ingresos y gastos están equilibrados")
+else:
+   print("Tenés" , saldo , "pesos disponibles")
